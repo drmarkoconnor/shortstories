@@ -1,0 +1,15 @@
+{
+  "name": "shortstory_sites",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Mark OConnor",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

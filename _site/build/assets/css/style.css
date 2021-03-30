@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+:root {
+  --footer-color: rgba(221, 168, 168, 0.4);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #000;
+}
+
+.splash {
+  margin: 0 auto;
+
+  max-width: 70vw;
+  min-width: 40vw;
+  height: 80vh;
+  background-image: url('/assets/images/man.jpg');
+  background-size: 90% 90%;
+}
+
+.footer-text {
+  color: var(--footer-color);
+}
+/* .card {
+  border: 0;
+} */
+/* .display-1 {
+  position: absolute;
+  bottom: 600px;
+  left: 500px;
+}
+.display-6 {
+  position: absolute;
+  bottom: 550px;
+  left: 500px;
+} */
