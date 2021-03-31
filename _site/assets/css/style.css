@@ -47,17 +47,20 @@ nav li {
 }
 
 .story-list {
+  cursor: pointer;
+  transform-origin: left;
+  /* transform: translatex(-50px) rotate(-360deg); */
   color: var(--story-list-text-color);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .row {
 }
 .overText {
   font-size: 1.5rem;
+  transform-origin: left;
   transform: translatex(50px) rotate(360deg);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in-out;
   color: rgb(216, 15, 15);
-  border-bottom: 1px solid white;
 }
 
 .card {
@@ -88,16 +91,19 @@ nav li {
 .footer-text {
   color: var(--footer-color);
 }
-/* .card {
-  border: 0;
-} */
-/* .display-1 {
-  position: absolute;
-  bottom: 600px;
-  left: 500px;
+
+@media (min-width: 1000px) {
+  /* using pseudo classes to put inline 'graphics' 
+  either side of the chosen file*/
+  .overText::before,
+  .overText::after {
+    color: rgb(18, 240, 18);
+    display: inline-block;
+    margin: 5px;
+    height: 1px;
+    content: '';
+    text-shadow: uppercase;
+    background-color: rgb(228, 22, 22);
+    width: 100px;
+  }
 }
-.display-6 {
-  position: absolute;
-  bottom: 550px;
-  left: 500px;
-} */
