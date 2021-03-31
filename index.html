@@ -7,8 +7,8 @@ layout: default
   <div class="splash row">
     ><h1 class="splash-header">the short stories</h1>
     <p class="author">by mark o'connor</p>
-      <p>{% for story in stories.title %}
-  <div class="story-list">{{ story }}</div>
+      <p>{% for story in story.story %}
+  <div class="story-list">{{ story.title }}</div>
   {% endfor %}</p>
     <div class="card">
       <div class="card-body">

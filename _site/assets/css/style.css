@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
   --footer-color: rgba(221, 168, 168, 0.4);
-  --splash-text-color: rgba(216, 204, 204, 0.4);
+  --story-list-text-color: rgba(245, 238, 238, 0.911);
   --body-bg-color: rgb(0, 0, 0);
   --nav-bg-color: rgb(0, 0, 0);
   --fas-icon-color: rgb(110, 104, 104);
-  --author-text-color: rgb(70, 60, 60);
+  --author-text-color: rgba(236, 223, 223, 0.4);
   --splash-header-color: rgb(252, 250, 250);
   --card-bg-color: grey;
   --card-title-color: rgb(235, 220, 220);
@@ -47,22 +47,24 @@ nav li {
 }
 
 .story-list {
-  color: var(--splash-text-color);
-  transition: transform 0.8s ease-in-out;
+  color: var(--story-list-text-color);
+  transition: transform 0.5s ease-in-out;
 }
 .row {
 }
 .overText {
   font-size: 1.5rem;
   transform: translatex(50px) rotate(360deg);
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.5s ease-in;
   color: rgb(216, 15, 15);
+  border-bottom: 1px solid white;
 }
 
 .card {
   width: 300px;
   background-color: var(--card-bg-color);
   margin: 100px 0;
+  /* display: none; */
 }
 .card-title {
   color: var(--card-title-color);
