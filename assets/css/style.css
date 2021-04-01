@@ -35,8 +35,6 @@ nav li {
 .fas {
   color: var(--fas-icon-color);
 }
-.splash {
-}
 
 .splash-header {
   color: var(--splash-header-color);
@@ -53,8 +51,7 @@ nav li {
   color: var(--story-list-text-color);
   transition: transform 1s ease-in-out;
 }
-.row {
-}
+
 .overText {
   font-size: 1.5rem;
   transform-origin: left;
@@ -121,7 +118,7 @@ nav li {
   }
 }
 
-@media (min-width: 3000px;) {
+@media (min-width: 3000px) {
   .container {
     width: 80%;
   }
