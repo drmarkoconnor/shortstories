@@ -7,18 +7,18 @@ layout: default
   <div class="splash row">
     ><h1 class="splash-header">the short stories</h1>
     <p class="author">by mark o'connor</p>
-      <p>{% for story in story.story %}
-  <div class="story-list">{{ story.title }}</div>
+      <p>{% for st in story %}
+  <div class="story-list">{{ st.title }}</div>
   {% endfor %}</p>
 
-      {% for story in story.story %}
+      {% for st in story %}
     <div class="card">
         <!-- <h5 class="card-title">{{ story.title }}</h5> -->
         <class class="card-text">
           <i class="fas fa-quote-left"></i>
-          {{ story.description }}
+          {{ st.description }}
           <i class="fas fa-quote-right"></i>
-        <button><a href="#">Read Now</a></button>
+        <button><a href="./stories/{{ st.title | slug }}/">Read the story now</a></button>
     </div>
     {% endfor %}
   </div>
