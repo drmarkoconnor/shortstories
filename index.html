@@ -10,14 +10,19 @@ layout: default
       <p>{% for story in story.story %}
   <div class="story-list">{{ story.title }}</div>
   {% endfor %}</p>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">e.target data here</h5>
-        <p class="card-text">Data from snippets in data file here</p>
-      </div>
-    </div>
-  </div>
 
+      {% for story in story.story %}
+    <div class="card">
+        <!-- <h5 class="card-title">{{ story.title }}</h5> -->
+        <class class="card-text">
+          <i class="fas fa-quote-left"></i>
+          {{ story.description }}
+          <i class="fas fa-quote-right"></i>
+        <button><a href="#">Read Now</a></button>
+    </div>
+    {% endfor %}
+  </div>
+s
 
 </div>
 
