@@ -1,0 +1,12 @@
+---
+pagination:
+  data: story
+  size: 1
+  alias: st
+permalink: '/stories/{{ st.title | slug }}/'
+---
+
+{{ st.title }} is described as - {{ st.description }}
+{{ st.textContent }}
+
+<a href="../../../storyContent/{{ st.title | slug }}">Read the story now</a>
