@@ -8,4 +8,11 @@
     <a class="nav-link active text-white" href="/stories/index.html"
       ><i class="fas fa-file-archive"></i
     ></a>
+    </li><li class="nav-item">{% for coll in collections.all %}{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+</li>
 </nav>
+
+
+
+
+{{ content | safe }}}

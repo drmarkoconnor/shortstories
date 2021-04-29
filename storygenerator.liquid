@@ -1,4 +1,5 @@
 ---
+layout: default.liquid
 pagination:
   data: story
   size: 1
@@ -6,7 +7,7 @@ pagination:
 permalink: '/stories/{{ st.title | slug }}/'
 ---
 
-{{ st.title }} is described as - {{ st.description }}
-{{ st.textContent }}
+<p>{{ st.title }} is described as - {{ st.description }}
+{{ st.textContent }}</p>
 
-<a href="../../../storyContent/{{ st.title | slug }}">Read the story now</a>
+<a href="../../../storycontent/{{ st.title | slug }}">Read the story now</a>
