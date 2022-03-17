@@ -1,0 +1,19 @@
+---
+layout: default.liquid
+---
+
+<!-- <img src="{{ cover }}" alt="" /> -->
+<h1>Thank you for choosing to read {{ st.title }}</h1>
+<p>
+	Layout Default liquid with title above and this content and conditional match
+	of title and then the bit about moc is author and thten the content No Link
+</p>
+<div>
+	{% for st in story %} {% if st.title == title %} {{ st.author }} is a great
+	author and describes his story <span class="">"{{ title }}"</span> as "{{
+		st.description
+	}}"{% endif %}{% endfor %}
+	<div class="center box">
+		{{ content }}
+	</div>
+</div>

@@ -1,59 +1,86 @@
-{
-  "story": [
-    {
-      "title": "angelo",
-      "author": "moc",
-      "description": "A desparate women seeks escape from her humdrum life with earth-shattering results"
-    },
-    {
-      "title": "the choice",
-      "author": "moc",
-      "description": "A legal love story"
-    },
-    {
-      "title": "the innocent neighbour",
-      "author": "moc",
-      "description": "A young girl goes missing in the dusty Arizona desert"
-    },
-    {
-      "title": "bloodlines",
-      "author": "moc",
-      "description": "Eva inherits millions from a mysterious benefactor but at what price?"
-    },
-    {
-      "title": "a stroke of blood",
-      "author": "moc",
-      "description": "A great artist struggles in a miserable marriage"
-    },
-    {
-      "title": "twice upon a time",
-      "author": "moc",
-      "description": "An experimental sci-fi story which takes place over 5 billion years and nods to the wonders of physics and evolution"
-    },
-    {
-      "title": "certifiable love",
-      "author": "moc",
-      "description": "A tale of male obsession"
-    },
-    {
-      "title": "the colonel's garden",
-      "author": "moc",
-      "description": "An old Colonel consumed by his Garden - literally!"
-    },
-    {
-      "title": "a view from above",
-      "author": "moc",
-      "description": "Two nuns in war torn London try and make sense of their faith whilst above fate waits"
-    },
-    {
-      "title": "stone cold memories",
-      "author": "moc",
-      "description": "Nominated for the Pushcart Prize this is a powerful story of male grief"
-    },
-    {
-      "title": "the speaking of Lorna",
-      "author": "moc",
-      "description": "The priest is nervous - Lorna hasn't spoken for ten years and now she's at the pulpit ready to tell all"
-    }
-  ]
-}
+[
+	{
+		"title": "angelo",
+		"author": "moc",
+		"description": "A desparate women seeks escape from her humdrum life with earth-shattering results",
+		"textContent": "Do I need textConent or would description do?",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "the choice",
+		"author": "moc",
+		"description": "A legal love story",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "the innocent neighbour",
+		"author": "moc",
+		"description": "A young girl goes missing in the dusty Arizona desert",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "bloodlines",
+		"author": "moc",
+		"description": "Eva inherits millions from a mysterious benefactor but at what price?",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "a stroke of blood",
+		"author": "moc",
+		"description": "A great artist struggles in a miserable marriage",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "twice upon a time",
+		"author": "moc",
+		"description": "An experimental sci-fi story which takes place over 5 billion years and nods to the wonders of physics and evolution",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "certifiable love",
+		"author": "moc",
+		"description": "A tale of male obsession",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "the colonels garden",
+		"author": "moc",
+		"description": "An old Colonel consumed by his Garden - literally!",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "a view from above",
+		"author": "moc",
+		"description": "Two nuns in war torn London try and make sense of their faith whilst above fate waits",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "stone cold memories",
+		"author": "moc",
+		"description": "Nominated for the Pushcart Prize this is a powerful story of male grief",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "the speaking of Lorna",
+		"author": "moc",
+		"description": "The priest is nervous - Lorna hasn't spoken for ten years and now she's at the pulpit ready to tell all",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	},
+	{
+		"title": "carving",
+		"author": "moc",
+		"description": "Take care of what you might break when you seek to create",
+		"textContent": "dummy text of actual story",
+		"storyurl": "/allstories/"
+	}
+]

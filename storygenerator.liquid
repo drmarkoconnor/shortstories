@@ -1,0 +1,19 @@
+---
+layout: story.liquid
+pagination:
+  data: story
+  size: 1
+  alias: st
+permalink: '/stories/{{ st.title | slug }}/'
+---
+
+<div >
+	<h1>{{ st.title }}</h1>
+	<h4>by {{ st.author }}</h4>
+</div>
+<p>
+	{{ st.title }} synopsis - {{ st.description }}
+	<div class="center stack box"><p>{{ st.textContent }}</p></div>
+	<button class="button"><a href="{{ st.storyurl }}{{{ st.title | slug }}">Read the full story</a></button>
+	{{ st.url }}
+</p>
