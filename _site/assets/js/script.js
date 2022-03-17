@@ -1,26 +1,26 @@
-const storyList = document.querySelectorAll('.story-list');
-const cardTitle = document.querySelector('.card-title');
-const card = document.querySelectorAll('.card');
-const cardBody = document.querySelector('.card-body');
-const cardText = document.querySelector('.card-text');
+const storyList = document.querySelectorAll('.story-list')
+const cardTitle = document.querySelector('.card-title')
+const card = document.querySelectorAll('.card')
+const cardBody = document.querySelector('.card-body')
+const cardText = document.querySelector('.card-text')
 
 storyList.forEach((story, idx) => {
-  story.addEventListener('click', (e) => {
-    e.target.classList.toggle('overText');
-    console.log(card[idx]);
-    card.forEach((cd, cidx) => {
-      if (cidx != idx) {
-        cd.classList.remove('show');
-      }
-    });
-    card[idx].classList.toggle('show');
-    storyList.forEach((story) => {
-      if (story != e.target) {
-        story.classList.remove('overText');
-      }
-    });
-  });
-});
+	story.addEventListener('click', (e) => {
+		e.target.classList.toggle('overText')
+		console.log(card[idx])
+		card.forEach((cd, cidx) => {
+			if (cidx != idx) {
+				cd.classList.remove('show')
+			}
+		})
+		card[idx].classList.toggle('show')
+		storyList.forEach((story) => {
+			if (story != e.target) {
+				story.classList.remove('overText')
+			}
+		})
+	})
+})
 
 // console.log(storyData);
 

@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root {
+	/* NUMBERS */
+	/* ...... */
+	--ratio: 1.2;
+	--s-5: calc(var(--s-4) / var(--ratio));
+	--s-4: calc(var(--s-3) / var(--ratio));
+	--s-3: calc(var(--s-2) / var(--ratio));
+	--s-2: calc(var(--s-1) / var(--ratio));
+	--s-1: calc(var(--s0) / var(--ratio));
+	--s0: 1rem;
+	--s1: calc(var(--s0) * var(--ratio));
+	--s2: calc(var(--s1) * var(--ratio));
+	--s3: calc(var(--s2) * var(--ratio));
+	--s4: calc(var(--s3) * var(--ratio));
+	--s5: calc(var(--s4) * var(--ratio));
+
+	/* SPACES */
+	--border-thin: 2px;
+	--border-thick: 15px;
+	--sm-space: 0.5rem;
+	--med-space: 0.75rem;
+	--lg-space: 1.225rem;
+	--gutter:1em
+
+	/* --measure whould be between 45 and 75 ch units for good readiing experience */
+	--measure: 30ch;
+	/* ... */
+
+	/* COLOURS */
+	--color-light: rgb(124, 126, 139);
+	--color-dark: hsl(241, 32%, 55%);
+
+	/* primary color block */
+	--primary-color-100: hsl(240, 55%, 87%);
+	--primary-color-300: hsl(240, 76%, 46%);
+	--primary-color-600: hsl(240, 85%, 51%);
+	--primary-color-900: hsl(0, 0%, 0%);
+	/* secondary color block */
+	--secondary-color-100: hsl(36, 81%, 71%);
+	--secondary-color-300: hsl(36, 50%, 30%);
+	--secondary-color-600: hsl(36, 60%, 30%);
+	--secondary-color-900: hsl(36, 80%, 10%);
+}
+* {
+	font-family: Poppins;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	max-inline-size: 65ch;
+	/* --measure whould be between 45 and 75 ch units for good reading experience */
+}
+/* h1,h2,h3,h4,h5,h6{
+	margin: 0;
+} */
+
+html,
+body,
+main,
+div,
+header,
+nav {
+	max-inline-size: none;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+p{
+	white-space: pre-wrap;
+	padding: 0 2em;
+}
+.storyp{
+	line-height: 1.8;
+	margin-top: 1em;
+}
+
+h1 {
+	font-size: var(--s5);
+}
+h2 {
+	font-size: var(--s4);
+}
+h3 {
+	font-size: var(--s3);
+}
+h4 {
+	font-size: var(--s2);
+}
+h5 {
+	font-size: var(--s1);
+}
+h6 {
+	font-size: var(--s0);
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* reset list */
+ol,
+ul,
+li,
+a {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+    color:var(--primary-color-100);
+    background-color: var(--primary-color-900);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Every layout start */
+
+.center {
+	display: flex;
+	flex-direction: column;
+	/* This will affect alignment of headers */
+	align-items: center;
+	/* ... */
+	box-sizing: content-box;
+	max-inline-size: var(--measure);
+	margin-inline: auto;
+	padding-inline-start: 1em;
+	padding-inline-end: 1em;
+	/* This will affect text in paragraphs not headers */
+	/* text-align: center; */
+	/* ... */
+}
+
+.box {
+	padding: var(--s-1);
+	border: var(--border-thin) solid;
+	border-radius: var(--border-thick, 10%);
+	color: var(--primary-color-600);
+	background-color: var(--primary-color-100);
+}
+
+.box * {
+	color: inherit;
+}
+
+.box.invert {
+	color: var(--color-light);
+	background-color: var(--color-dark);
+}
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: space-around;
+	align-items: center;
+}
+.button {
+	border-radius: 50px;
+	padding: 0.3em;
+	background-color:var(--primary-color-100);
+	margin-top: 1em;
+	
+}
+.button a{
+
+	background-color:var(--primary-color-100);
+	color: var(--primary-color-300);
+	
+}
+.button:hover {
+	scale: 1.1;
+}
+.button:active {
+	scale: 1.2;
+	background-color: var(--primary-color-300, red);
+	color: var(--primary-color-100, red);
+}
+.button:active.invert {
+	scale: 1.2;
+	background-color: var(--color-light, red);
+	color: var(--color-dark, red);
+}
+
+.with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	/* default align items is stretch which would give equal heights */
+	/* align-items: flex-start; */
+	gap: var(--sm-space, 1em);
+}
+
+.sidebar {
+	/* If sidebar contents are small could omit the next line as the width will be detemined by content - it will still break at >50% sidebar width */
+	flex-basis: 20rem;
+	/* ... */
+	flex-grow: 1;
+}
+/* .sidebar img {
+	max-width: 40%;
+} */
+
+.not-sidebar {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 50%;
+}
+
+.switcher {
+	display: flex;
+	flex-wrap: wrap; /* ↓ The default value is the first point on the modular scale */
+	gap: var(--gutter, var(--s1)); /* ↓ The width at which the layout “breaks” */
+	--threshold: 40rem;
+}
+
+.switcher > * {
+	/* ↓ Allow children to grow */
+	flex-grow: 1; /* ↓ Switch the layout at the --threshold */
+	flex-basis: calc((var(--threshold) - 100%) * 999);
+	/* gap: var(--gutter, var(--s1)); */
+	gap: 2em;
+}
+
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
+	/* ↓ Switch to a vertical configuration if
+
+there are more than 4 child elements */
+
+	flex-basis: 100%;
+}
+/* .switcher p{
+	max-inline-size: 20em;
+} */
+
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+@supports (width: min(250px, 100%)) {
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+	}
+}
+
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.stack > * {
+	margin-block: 0;
+}
+
+.stack > * + * {
+	margin-block-start: var(--space, 1.5rem);
+}
+.stack img {
+	/* width: 100%; */
+	max-inline-size: 100%;
+}
+
+.frame {
+	--n: 16;
+	--d: 9;
+	aspect-ratio: var(--n) / var(--d);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+.frame > img,
+.frame > video {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+}
+
+.reel {
+	display: flex;
+	/* ↓ We only want horizontal scrolling */
+	overflow-x: auto;
+	/* ↓ First value: thumb; second value: track */
+	scrollbar-color: var(--color-light) var(--color-dark);
+	gap: var(--s1);
+}
+.reel::-webkit-scrollbar {
+	block-size: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+	background-color: var(--color-dark);
+}
+
+.reel::-webkit-scrollbar-thumb {
+	background-color: var(--color-dark);
+	background-image: linear-gradient(
+		var(--color-dark) 0,
+		var(--color-dark) 0.25rem,
+		var(--color-light) 0.25rem,
+		var(--color-light) 0.75rem,
+		var(--color-dark) 0.75rem
+	);
+}
+
+.reel {
+	block-size: 50vh;
+}
+
+.reel > img {
+	block-size: 100%;
+	width: auto;
+}
+
+.imposter {
+	position: fixed;
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.imposter.contain {
+	--margin: 10px;
+	overflow: auto;
+	max-inline-size: calc(100% - (var(--margin) * 2));
+	max-block-size: calc(100% - (var(--margin) * 2));
+}
+
+/* Start of classes to style */
+.fas {
+	color: var(--secondary-color-100);
+   
+}
+
+/* .splash-header {
+	color: var(--secondary-color-100);
+} */
+.author {
+	color: var(--primary-color-100);
+	text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.story-list {
+	cursor: pointer;
+	transform-origin: left;
+	/* transform: translatex(-50px) rotate(-360deg); */
+	color: var(--secondary-color-100);
+	transition: transform 1s ease-in-out;
+}
+
+.overText {
+	font-size: 1.3rem;
+    display: inline-block;
+	transform-origin: left;
+	transform: translatex(50px) rotate(360deg);
+	transition: transform 0.5s ease-in-out;
+	color: var(--primary-color-300);
+    background-color: var(--primary-color-100);
+    padding: .1em 0.5em;
+    border-radius: 15px;
+    margin: 0.5em;
+}
+
+.card {
+    margin-top: 2rem;
+	/* width: 300px; */
+	/* background-color: var(--card-bg-color); */
+	/* margin: 100px 20px; */
+	display: none;
+	/* height: 100px; */
+   
+}
+.card.show {
+	display: unset;
+	/* width: unset;
+	height: unset; */
+    
+}
+.card-title {
+	color: var(--primary-color-300);
+}
+.card-text {
+	color: var(--primary-color-100);
+	font-size: 1.3rem;
+     max-inline-size: var(--measure);
+	 margin-top: 2em;
+    
+}
+
+
+.splash {
+	margin: 0 auto;
+	position: relative;
+	max-width: 90vw;
+	min-width: 80vw;
+	height: 100vh;
+	background-image: url('/assets/images/man.jpg');
+	background-size:cover;
+}
+.splash h1{
+    color: var(--primary-color-100);
+}
+
+.footer-text {
+	color: var(--primary-color-100);
+}
+
+@media (min-width: 1000px) {
+	/* using pseudo classes to put inline 'graphics' 
+  either side of the chosen file*/
+	.overText::before,
+	.overText::after {
+		color: rgb(18, 240, 18);
+		display: inline-block;
+		margin: 5px;
+		height: 1px;
+		content: '';
+		text-shadow: uppercase;
+		background-color: var(--primary-color-900);
+		width: 50px;
+	}
+	.container {
+		width: 100%;
+	}
+}
+
+@media (min-width: 3000px) {
+	.container {
+		width: 80%;
+	}
+}
+
+.story-text{
+/* margin-top: 1em; */
+}

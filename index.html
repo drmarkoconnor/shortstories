@@ -1,29 +1,26 @@
 ---
-title: Home Page
+title: Homey
 layout: default
 ---
 
-<div class="container">
-  <div class="splash row">
-    <h1 class="splash-header">the short stories</h1>
-    <p class="author">by mark o'connor</p>
-      <p>{% for st in story %}
-  <div class="story-list">{{ st.title }}</div>
-  {% endfor %}</p>
+<div class="splash">
+	<h1>the short stories</h1>
+	<p class="author">by mark o'connor</p>
+	{% for st in story %}
+	<div class="story-list">{{ st.title }}</div>
+	{% endfor %} {% for st in story %}
+	<div class="card cluster">
+		<div class="card-text">
+			<i class="fas fa-quote-left"></i>
+			{{ st.description }}
+			<i class="fas fa-quote-right"></i>
+		</div>
 
-      {% for st in story %}
-    <div class="card">
-        <!-- <h5 class="card-title">{{ story.title }}</h5> -->
-        <class class="card-text">
-          <i class="fas fa-quote-left"></i>
-          {{ st.description }}
-          <i class="fas fa-quote-right"></i>
-        <button><a href="./stories/{{ st.title | slug }}/">Read the story now</a></button>
-    </div>
-    {% endfor %}
-  </div>
-s
-
+		<button class="button">
+			<a href="./stories/{{ st.title | slug }}/">Read story now</a>
+		</button>
+	</div>
+	{% endfor %}
 </div>
 
 {% include footer %}
